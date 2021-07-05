@@ -1,0 +1,137 @@
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form name="firstopen">
+        <div class="billingmenu">
+            <h1>Rechnung</h1>
+            <div class="line"></div>
+            <div class="image"></div>
+            <input class="inputfirmenerstellname" id="inputfirmenerstellname" type="text"  maxlength="100" value="Firmen / Ersteller name" autofocus="true" name="inputfirmenerstellnamee" onclick="inputfirmenerstellname()">
+            <input class="inputerstellstrasse" id="inputerstellstrasse" type="text"  maxlength="100" value="Musterstrasse" autofocus="true" name="inputerstellstrassee" onclick="inputerstellstrasse()">
+            <input class="inputerstellort" id="inputerstellort" type="text"  maxlength="100" value="Musterort" autofocus="true" name="inputerstellortt" onclick="inputerstellort()">
+            <input class="inputerstellphone" id="inputerstellphone" type="text"  maxlength="100" value="Musterphone" autofocus="true" name="inputerstellphonee" onclick="inputerstellphone()">
+    
+            <input class="inputname" type="text"  id="inputname" maxlength="100" value="Max Mustermann" autofocus="true" name="empfaengerinputname" onclick="clearempfaengername()">
+            <input class="inputstrasse" type="text"  id="inputstrasse" maxlength="100" value="Musterstrasse" autofocus="true" name="inputstrassee" onclick="inputstrasse()">
+            <input class="inputempfaengerort" type="text" id="inputempfaengerort" maxlength="100" value="Musterstrasse Ort" autofocus="true" name="inputempfaengerortt" onclick="inputempfaengerort()">
+            
+            <inputempfaenger>Empfänger</inputempfaenger>
+
+            <rechnungsdatum>Rechnungsdatum:</rechnungsdatum>
+            <input class="rechnunsdatumstamp" type="text" autofocus="true" value="111"  name="rechnunsdatumstampp">
+            <rechnungsnummer>Rechnungsnummer:</rechnungsnummer>
+            <kundennummer>Kundennummer:</kundennummer>
+            <zahlungsziel>Zahlungsziel:</zahlungsziel>
+            <fälligkeitdatum>Fälligkeitsdatum:</fälligkeitdatum>
+
+    
+
+            <div class="line2"></div>
+            
+            <textarea class="zusaetzlicherinfotext" id="zusaetzlicherinfotext" style="resize: none;" onclick="zusaetzlicherinfotext()" name="zusaetzlicherinfotextt">z.B Der Empfänger ist in einer Gang</textarea>
+            
+            <div class="containernum"></div>
+            
+            <Bezeichnung>Bezeichnung</Bezeichnung>
+            
+            <anzahl>Anzahl</anzahl>
+            
+            <preiseinheit>Preis/Einheit</preiseinheit>
+            
+            <gesamt>Gesamt</gesamt>
+
+            <zusaetzlicherinfo>Zusätzliche Information</zusaetzlicherinfo>
+            
+            <div class="line3"></div>
+                    
+            <input class="input1" id="input1" type="text" value="§1" autofocus="true">
+            
+            <input class="inputanzahl" id="inputanzahl" type="number" value="1" autofocus="true" name="inputanzahl">
+            
+            <input class="inputpreis" id="inputpreis" type="number" value="1" autofocus="true" name="inputpreis">
+            
+            <input class="inputgesamt" id="inputgesamt" type="text" value="1" autofocus="true" name="inputgesamt11" readonly="true">
+    
+            <div class="line4"></div>
+    
+    
+    
+    
+            <input class="input2" id="input2" type="text" value="-" autofocus="true">
+    
+            <input class="inputanzahl2" id="inputanzahl2" type="number" value="" autofocus="true" name="inputanzahl2">
+    
+            <input class="inputpreis2" id="inputpreis2" type="number" value="" autofocus="true" name="inputpreis2">
+    
+            <input class="inputgesamt2" id="inputgesamt2" type="text" value="" autofocus="true" name="inputgesamt22" readonly="true">
+    
+            <div class="line5"></div>
+    
+    
+    
+    
+    
+            <input class="input3" id="input3" type="text" value="-" autofocus="true">
+    
+            <input class="inputanzahl3" id="inputanzahl3" type="number" value="" autofocus="true" name="inputanzahl3">
+    
+            <input class="inputpreis3" id="inputpreis3" type="number" value="" autofocus="true" name="inputpreis3">
+    
+            <input class="inputgesamt3" id="inputgesamt3" type="text" value="" autofocus="true" name="inputgesamt33" readonly="true">
+    
+            <div class="line6"></div>
+    
+    
+    
+            <input class="input4" id="input4" type="text" value="-" autofocus="true">
+    
+            <input class="inputanzahl4" id="inputanzahl4" type="number" value="" autofocus="true" name="inputanzahl4">
+    
+            <input class="inputpreis4" id="inputpreis4" type="number" value="" autofocus="true" name="inputpreis4">
+    
+            <input class="inputgesamt4" id="inputgesamt4" type="text" value="" autofocus="true" name="inputgesamt44" readonly="true">
+    
+            <div class="line7"></div>
+
+                
+            <Rechnungsbetrag>Rechnungsbetrag</Rechnungsbetrag>
+            <input class="Rechnungsbetrag" id="rechnungsbetrag" type="text"  autofocus="true" name="rechenbetrag" readonly="true">
+    
+    
+            <div class="line8"></div>
+            <div class="line9"></div>
+    
+            <AboutScript>About Script</AboutScript>
+            <credits>By『 CoRnY 』#9999</credits>
+            <discord>Discord.gg/gqKDrNe8uf</discord>
+    
+            <Bankverbindungen>Bankverbindungen</Bankverbindungen>
+            <Iban>IBAN:</Iban>
+    
+            <input class="inputiban" type="number" value="1" autofocus="true">
+
+
+            <input class="rechnungsnumber" type="text" autofocus="false" value="111"  name="rechnungsnumberr" readonly="true">
+            <input class="kundennummergen" type="text" autofocus="false" value="111"  name="kundennummergenn" readonly="true">
+
+            <input class="zahlungsziel" type="text" autofocus="false" value="30 Tage"  name="zahlungsziell">
+
+
+            <input class="fälligkeitsdatum" type="text" autofocus="false" value="-"  name="fälligkeitsdatumm">
+
+            <button class="Abschicken" onclick="abschicken(1)">Abschicken</button>
+
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+    <script>gesamtrechnung();</script>
+    <script>malrechnung();</script>
+    <script>randimnumbers();</script>
+</body>
+
